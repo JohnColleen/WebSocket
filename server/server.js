@@ -5,15 +5,15 @@ const httpServer = createServer();
 const socket = new Server(httpServer, {
 	/* options */
 	cors: {
-		origin: "http://127.0.0.1:5500",
+		origin: " http://localhost:5173",
 	},
 });
 
-socket.on("connection", () => {
+socket.on("connection", (socket) => {
 	// ...
 	console.log(socket);
 });
 
 httpServer.listen(3000, () => {
-	console.log("Server is connected");
+	console.log("Server is running.");
 });
