@@ -44,4 +44,30 @@
 .input-field {
 	height: 2rem;
 	padding-left: 0.5rem;
+	outline: none;
+	width: 20rem;
+	margin: 0.5rem;
+}
+
+.send-scores {
+	margin: 1rem;
+}
+
+table {
+	padding-top: 2rem;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0 auto;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: gainsboro;
 }
